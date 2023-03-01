@@ -1,0 +1,28 @@
+:root {
+    --db-primary: #FFFFFF;
+    --db-soft-grey: #E5E5E5;
+    --db-secondary: #1F70E8;
+    --db-dark: #142A40;
+
+}
+
+
+#site_header {
+    height: 60px;
+    background-color: red;
+}
+
+
+main {
+    width: calc(100% - 60px);
+    height: calc(100vh - 60px);
+    background-color: green;
+    overflow-y: auto;
+}
+
+.sidebar {
+    position: relative;
+    width: 70px;
+    height: calc(100vh - 60px);
+    background-color: var(--db-dark);
+}
