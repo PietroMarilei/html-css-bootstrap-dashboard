@@ -2,9 +2,26 @@
     --db-primary: #FFFFFF;
     --db-soft-grey: #E5E5E5;
     --db-secondary: #1F70E8;
+    --db-dark-blue: #175BBA;
     --db-dark: #142A40;
 
 }
+
+/* #region utilities */
+.bg_blue {
+    background-color: var(--db-secondary);
+}
+
+.bg_dark_blue {
+    background-color: var(--db-dark-blue);
+}
+
+
+.fontAwesome {
+    font-family: 'Helvetica', FontAwesome, sans-serif;
+}
+
+/* #nedregion utilities */
 
 .debug #site_header {
     background-color: red;
@@ -15,15 +32,16 @@
 }
 
 .debug [class^="col"] {
-    height: 100px;
+    height: 1000px;
     border: 1px dashed rgb(0, 0, 0);
 }
+
+
 
 
 #site_header {
     height: 60px;
 }
-
 
 main {
     width: calc(100% - 60px);
@@ -34,6 +52,15 @@ main {
 .sidebar {
     position: relative;
     width: 70px;
-    height: calc(100vh - 60px);
+    height: calc(100vh - 50px);
     background-color: var(--db-dark);
+}
+
+
+/* mediaQueries */
+
+@media screen and (min-width:992px) {
+    .sidebar {
+        width: 180px;
+    }
 }
