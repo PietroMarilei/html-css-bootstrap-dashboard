@@ -19,57 +19,62 @@
 
         <link rel="stylesheet" href="./asset/style.css">
     </head>
-    <body class="debu">
+    <body class="debugg">
 
-        <header id="site_header">
+        <header class="site_header d-flex justify-content-between
+            align-items-center py-2">
+            <img width="30px" class="d-lg-none"
+                src="./asset/img/mobile-logo.png" alt="">
+
+            <img class="d-none d-lg-block" src="./asset/img/logo.svg" alt="">
+            <form class="d-flex w-100 mx-4" role="search">
+                <input class="form-control me-2 fontAwesome"
+                    type="search"
+                    placeholder="&#xF002; Prova a cercare"
+                    aria-label="Search">
+            </form>
+
+            <i class="fa-solid fa-bars mx-2 d-none d-lg-block"></i>
+            <i class="fa-solid fa-question mx-2 d-none d-lg-block"></i>
+            <i class="fa-solid fa-ellipsis-vertical mx-2 d-none d-lg-block"></i>
+            <div class="dropdown">
+                <button class="btn p-1 pe-2" type="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fa-solid fa-bell mx-2"></i>
+                </button>
+
+                <ul class="drop_down dropdown-menu ">
+                    <li>
+                        <form class="p-4">
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1"
+                                    class="form-label">Email address</label>
+                                <input type="email" class="form-control"
+                                    id="exampleInputEmail1"
+                                    aria-describedby="emailHelp">
+                                <div id="emailHelp" class="form-text">We'll
+                                    never share your email with anyone else.</div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputPassword1"
+                                    class="form-label">Password</label>
+                                <input type="password" class="form-control"
+                                    id="exampleInputPassword1">
+                            </div>
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input"
+                                    id="exampleCheck1">
+                                <label class="form-check-label"
+                                    for="exampleCheck1">Check me out</label>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+                    </li>
+
+                </ul>
+            </div>
 
 
-
-
-            <nav class="navbar navbar-expand-lg bg-light ">
-                <div class="container-fluid">
-                    <a class="navbar-brand py-0" href="#">
-                        <div class="navbar-toggler border-0">
-                            <img width="30px" class=""
-                                src="./asset/img/mobile-logo.png" alt="">
-
-                        </div>
-                        <div class="collapse navbar-collapse">
-                            <img src="./asset/img/logo.svg" alt="">
-                        </div>
-                    </a>
-
-
-                    <form class="d-flex w-auto" role="search">
-                        <input class="form-control me-2 fontAwesome"
-                            type="search"
-                            placeholder="&#xF002; Prova a cercare"
-                            aria-label="Search">
-                    </form>
-
-
-                    <div class=""
-                        id="navbarSupportedContent">
-
-                        <ul class="navbar-nav ms-auto mb-2 ">
-                            <li class="nav-item mx-1">
-                                <i class="fa-solid fa-bars"></i>
-                            </li>
-                            <li class="nav-item mx-1">
-                                <i class="fa-solid fa-question"></i>
-                            </li>
-                            <li class="nav-item mx-1">
-                                <i class="fa-solid fa-ellipsis-vertical"></i>
-                            </li>
-                            <li class="nav-item mx-1 text-danger">
-                                <i class="fa-solid fa-bell"></i>
-                            </li>
-
-                        </ul>
-
-                    </div>
-                </div>
-            </nav>
         </header>
 
         <!-- ---site header -->
@@ -77,35 +82,52 @@
         <div class="wrapper d-flex">
             <div class="sidebar"></div>
             <main>
-                <div class="container">
-                    <div class="row bg_blue">
-                        <div class="col col-md-4 text-light">
+                <div class="container-fluid">
+                    <div class="row bg_blue py-3">
+                        <div class="col-12 col-md-4 text-light order-md-last">
+                            <h6>Nuovo studente</h6>
+                            <button type="button" class="btn btn-outline-light">+</button>
+                        </div>
+                        <div class="col-12 col-md-4 text-light">
                             <h2>Boolean</h2>
                             <span class="badge rounded-pill bg_dark_blue ">Piano
                                 Blaze</span> &#xbb; <span class="badge
                                 rounded-pill bg_dark_blue ">3 apps</span>
-                            <span class="badge rounded-pill bg_dark_blue ">+</span>
-                            <span class="badge rounded-pill bg_dark_blue ">Boolean
+                            <span class="badge rounded-pill bg_dark_blue
+                                d-lg-none">+</span>
+
+                            <span class="badge rounded-pill bg_dark_blue d-none
+                                d-lg-inline ">Boolean
                                 Mobile App</span>
-                            <span class="badge rounded-pill bg_dark_blue ">Boolean
+                            <span class="badge rounded-pill bg_dark_blue d-none
+                                d-lg-inline">Boolean
                                 web App</span>
-                            <span class="badge rounded-pill bg_dark_blue ">Boolean
+                            <span class="badge rounded-pill bg_dark_blue d-none
+                                d-lg-inline">Boolean
                                 Blog App</span>
                         </div>
                         <!-- --------- -->
-                        <div class="col col-md-4 text-light">
+                        <div class="col-12 col-md-4 text-light">
                             <p>studenti degli utltimi 30 minuti</p>
-                            <p>125</p>
+                            <p class="fs-3 fw-bold">125</p>
 
                         </div>
-                        <div class="col col-md-4 text-light">
-                            <h6>Nuovo studente</h6>
-                            <button type="button" class="btn btn-outline-light">+</button>
-                        </div>
+
                     </div>
                     <!-- ---- -->
                     <div class="row ">
-                        <div class="col-12 col-lg-8"></div>
+                        <div class="col-12 col-lg-8">
+                            <div class="card" style="width: 18rem;">
+                                <div class="card-header">
+                                    Featured
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">An item</li>
+                                    <li class="list-group-item">A second item</li>
+                                    <li class="list-group-item">A third item</li>
+                                </ul>
+                            </div>
+                        </div>
                         <div class="col-12 col-lg-4"></div>
                     </div>
                 </div>
