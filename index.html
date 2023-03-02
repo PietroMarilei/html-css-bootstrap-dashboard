@@ -40,7 +40,7 @@
             <div class="dropdown">
                 <button class="btn p-1 pe-2" type="button"
                     data-bs-toggle="dropdown" aria-expanded="false">
-                    <i class="fa-solid fa-bell mx-2"></i>
+                    <i class="fa-solid fa-bell mx-2 text-danger"></i>
                 </button>
 
                 <ul class="drop_down dropdown-menu ">
@@ -63,7 +63,20 @@
         <!-- ---site header -->
 
         <div class="wrapper d-flex">
-            <div class="sidebar"></div>
+            <div class="sidebar ">
+              <div class="home m-3">
+                 <i class="fa-solid fa-house text-light fs-4"></i> <h5 class=" d-none ms-2 text-light d-lg-inline">Home</h5>
+              </div>
+              <!-- --- -->
+              <div class="home m-3">
+                 <i class="fa-solid fa-chart-simple text-light fs-4"></i> <h5 class=" d-none ms-3 text-light d-lg-inline">Stats</h5>
+              </div>
+              <!-- --- -->
+              <div class="home m-3">
+                 <i class="fa-solid fa-signal text-light fs-4"></i> <h5 class=" d-none ms-2 text-light d-lg-inline">Signals</h5>
+              </div>
+              <!-- --- -->
+            </div>
             <main class="main_content">
                 <div class="container-fluid">
                     <div class="row bg_blue py-3">
@@ -103,93 +116,6 @@
                     <!-- ---- -->
                     <div class="row ">
                         <div class="col-12 col-lg-8 py-3">
-                          <!-- ----form test -->
-                          <form>
-                <div class="mb-3 d-flex flex-wrap">
-                  <div class="name w-50 pe-4">
-                    <label for="name" class="form-label fw-semibold ">Nome</label>
-                    <input type="text" class="form-control" id="name" aria-describedby="emailHelp">
-                  </div>
-
-                  <div class="cognome w-50" >
-                    <label for="cognome" class="form-label fw-semibold ">Cognome</label>
-                    <input type="text" class="form-control " id="cognome" aria-describedby="emailHelp">
-                  </div>
-
-                  <div class="email w-50 pe-4" >
-                    <label for="email" class="form-label fw-semibold ">Email</label>
-                    <div class="input-group mb-3">
-                    <span class="input-group-text" id="basic-addon1">@</span>
-                        <input type="email" class="form-control" id="email">
-                    </div>
-                  </div>
-
-                  <div class="password w-50" >
-                    <label for="password" class="form-label fw-semibold ">Password</label>
-                    <input type="password" class="form-control " id="password" aria-describedby="emailHelp">
-                    </div>
-
-                    <div class="email w-50 pe-4" >
-                    <label for="email" class="form-label fw-semibold ">Email</label>
-                    <div class="input-group mb-3">
-                    <span class="input-group-text" id="basic-addon1">@</span>
-                        <input type="email" class="form-control" id="email">
-                    </div>
-                  </div>
-
-                  <div class="password w-50" >
-                    <label for="password" class="form-label fw-semibold ">Password</label>
-                    <input type="password" class="form-control " id="password" aria-describedby="emailHelp">
-                    </div>
-
-                  <div class="indirizzo w-100">
-                    <label for="indirizzo" class="form-label fw-semibold ">Indirizzo</label>
-                    <input type="text" class="form-control" id="indirizzo" aria-describedby="emailHelp">
-                  </div>
-
-                  <div class="città w-50 pe-4">
-                    <label for="città" class="form-label fw-semibold ">Città</label>
-                    <input type="text" class="form-control" id="città" aria-describedby="emailHelp">
-                  </div>
-
-                  <div class="stato w-25 pe-4">
-                    <label for="stato" class="form-label fw-semibold ">Città</label>
-                    <div class="input-group mb-3">
-                      <select class="form-select" id="stato">
-                        <option selected>Scegli</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
-                      </select>
-                    </div>
-                    
-                  </div>
-
-                  <div class="CAP w-25">
-                    <label for="CAP" class="form-label fw-semibold ">CAP</label>
-                    <input type="text" class="form-control" id="CAP" aria-describedby="emailHelp">
-                  </div>
-
-                  <div class="upload w-100">
-                    <label for="foto" class="form-label fw-semibold ">Foto</label>
-                    <div class="input-group mb-3">
-                      <input type="file" class="form-control" id="foto">
-                      
-                    </div>
-
-                  </div>
-
-                  <div class="mb-3 form-check">
-                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                    <label class="form-check-label" for="exampleCheck1">Seleziona per proseguire</label>
-                  </div>
-
-                  <div class="buttons_form w-100">
-                    <input class="btn btn-primary" type="submit" value="Salva">
-                    <input class="btn btn-warning" type="reset" value="Svuota">
-                  </div>
-                </div>
-              </form>
 
                             <div class="card w-100" style="width: 18rem;">
                                 <div class="card-header">
@@ -359,33 +285,104 @@
             </main>
         </div>
 
-<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-  <div class="offcanvas-header">
-    <h5 class="offcanvas-title" id="offcanvasExampleLabel">Inserisci un nuovo studente</h5>
-    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-  </div>
-  <div class="offcanvas-body">
-    <div>
-              <form>
-                <div class="mb-3">
-                  <label for="exampleInputEmail1" class="form-label">Email address</label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                  <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-                </div>
-                <div class="mb-3">
-                  <label for="exampleInputPassword1" class="form-label">Password</label>
-                  <input type="password" class="form-control" id="exampleInputPassword1">
-                </div>
-                <div class="mb-3 form-check">
-                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                  <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
-              </form>
+    <div class="offcanvas offcanvas-end " tabindex="-1" id="offcanvasExample"    aria-labelledby="offcanvasExampleLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Inserisci un nuovo studente</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body ">
+        <div>
+                  <!-- ----form  -->
+                  <form>
+                    <div class="mb-3 d-flex flex-wrap">
+                      <div class="name w-50 pe-4">
+                        <label for="name" class="form-label fw-semibold ">Nome</label>
+                        <input type="text" class="form-control" id="name" aria-describedby="emailHelp">
+                      </div>
+
+                      <div class="cognome w-50" >
+                        <label for="cognome" class="form-label fw-semibold ">Cognome</label>
+                        <input type="text" class="form-control " id="cognome" aria-describedby="emailHelp">
+                      </div>
+
+                      <div class="email w-50 pe-4" >
+                        <label for="email" class="form-label fw-semibold ">Email</label>
+                        <div class="input-group mb-3">
+                        <span class="input-group-text" id="basic-addon1">@</span>
+                            <input type="email" class="form-control" id="email">
+                        </div>
+                      </div>
+
+                      <div class="password w-50" >
+                        <label for="password" class="form-label fw-semibold ">Password</label>
+                        <input type="password" class="form-control " id="password" aria-describedby="emailHelp">
+                        </div>
+
+                        <div class="email w-50 pe-4" >
+                        <label for="email" class="form-label fw-semibold ">Email</label>
+                        <div class="input-group mb-3">
+                        <span class="input-group-text" id="basic-addon2">@</span>
+                            <input type="email" class="form-control" id="email">
+                        </div>
+                      </div>
+
+                      <div class="password w-50" >
+                        <label for="password" class="form-label fw-semibold ">Password</label>
+                        <input type="password" class="form-control " id="password" aria-describedby="emailHelp">
+                        </div>
+
+                      <div class="indirizzo w-100">
+                        <label for="indirizzo" class="form-label fw-semibold ">Indirizzo</label>
+                        <input type="text" class="form-control" id="indirizzo" aria-describedby="emailHelp">
+                      </div>
+
+                      <div class="città w-50 pe-4">
+                        <label for="città" class="form-label fw-semibold ">Città</label>
+                        <input type="text" class="form-control" id="città" aria-describedby="emailHelp">
+                      </div>
+
+                      <div class="stato w-25 pe-4">
+                        <label for="stato" class="form-label fw-semibold ">Città</label>
+                        <div class="input-group mb-3">
+                          <select class="form-select" id="stato">
+                            <option selected>Scegli</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                        </div>
+                        
+                      </div>
+
+                      <div class="CAP w-25">
+                        <label for="CAP" class="form-label fw-semibold ">CAP</label>
+                        <input type="text" class="form-control" id="CAP" aria-describedby="emailHelp">
+                      </div>
+
+                      <div class="upload w-100">
+                        <label for="foto" class="form-label fw-semibold ">Foto</label>
+                        <div class="input-group mb-3">
+                          <input type="file" class="form-control" id="foto">
+                          
+                        </div>
+
+                      </div>
+
+                      <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Seleziona per proseguire</label>
+                      </div>
+
+                      <div class="buttons_form w-100">
+                        <input class="btn btn-primary" type="submit" value="Salva">
+                        <input class="btn btn-warning" type="reset" value="Svuota">
+                      </div>
+                    </div>
+                </form>
+        </div>
+        
+      </div>
     </div>
-    
-  </div>
-</div>
 
 
 

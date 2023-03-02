@@ -74,6 +74,7 @@ main {
 }
 
 
+
 /* mediaQueries */
 
 @media screen and (min-width:992px) {
@@ -84,5 +85,7 @@ main {
     main {
         width: calc(100% - 180px);
     }
+
+
 
 }
