@@ -83,11 +83,6 @@ main {
 
     main {
         width: calc(100% - 180px);
-
     }
 
-    .long_table_row {
-        width: 30%;
-
-    }
 }

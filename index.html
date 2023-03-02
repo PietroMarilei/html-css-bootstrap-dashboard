@@ -23,10 +23,10 @@
 
         <header class="site_header d-flex justify-content-between
             align-items-center py-2">
-            <img width="30px" class="d-lg-none"
+            <img width="40px" class="d-lg-none mx-2"
                 src="./asset/img/mobile-logo.png" alt="">
 
-            <img class="d-none d-lg-block px-3" src="./asset/img/logo.svg" alt="">
+            <img class="d-none d-lg-block px-2" src="./asset/img/logo.svg" alt="">
             <form class="d-flex w-100 mx-4" role="search">
                 <input class="form-control me-2 fontAwesome"
                     type="search"
@@ -64,7 +64,7 @@
 
         <div class="wrapper d-flex">
             <div class="sidebar"></div>
-            <main>
+            <main class="main_content">
                 <div class="container-fluid">
                     <div class="row bg_blue py-3">
                         <div class="col-12 col-md-4 text-light order-md-last">
@@ -107,7 +107,7 @@
                                 <table class="table">
                                     <thead>
                                         <tr>
-                                        <th scope="col">Nome</th>
+                                        <th class="w-50" scope="col">Nome</th>
                                         <th scope="col">Data inizio</th>
                                         <th scope="col">ROI</th>
                                         <th scope="col">Stato</th>
@@ -228,7 +228,37 @@
                             </div>
                             
                         </div>
-                        <div class="col-12 col-lg-4"></div>
+                        <div class="col-12 col-lg-4">
+                          <div class="card w-100 mt-3" style="width: 18rem;">
+                            <div class="card-header fs-2 fw-semibold">
+                              Todo
+                            </div>
+                            <ul class="list-group list-group-flush">
+                              <li class="list-group-item"> <input type="checkbox">
+                                Kick-off nuove classi</li>
+                              <li class="list-group-item"> <input type="checkbox">
+                                lezione Boootstrap in class#91</li><li class="list-group-item"> <input type="checkbox">
+                                Controllare username Github studenti</li>
+                            </ul>
+                          </div>
+                          <!-- ------------- -->
+                          <div class="card w-100 mt-3" style="width: 18rem;">
+                            <img src="./asset/img/stats.jpeg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Utenti Attivi</h5>
+                              <p class="card-text">Lista degli utentnti attivi in piattaforma nell'ultimo mese</p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                              <li class="list-group-item">Gennaio: 1200</li>
+                              <li class="list-group-item">Febbraio: 800</li>
+                              <li class="list-group-item">Marzo: 1500</li>
+                            </ul>
+                            <div class="card-body">
+                              <a href="#" class="card-link">Visualizza report approfondito</a>
+                              
+                            </div>
+                          </div>
+                        </div>
                     </div>
                 </div>
 
