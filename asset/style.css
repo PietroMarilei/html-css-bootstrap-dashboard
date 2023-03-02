@@ -39,7 +39,7 @@
 
 
 
-#site_header {
+.site_header {
     height: 60px;
 }
 
@@ -51,16 +51,25 @@
     width: 100vw; */
 }
 
-main {
-    width: calc(100% - 60px);
+/* sta roba non fa */
+
+
+.wrapper {
     height: calc(100vh - 60px);
+}
+
+main {
+    width: calc(100% - 70px);
+
     overflow-y: auto;
 }
+
+
 
 .sidebar {
     position: relative;
     width: 70px;
-    height: calc(100vh - 60px);
+
     background-color: var(--db-dark);
 }
 
@@ -70,5 +79,15 @@ main {
 @media screen and (min-width:992px) {
     .sidebar {
         width: 180px;
+    }
+
+    main {
+        width: calc(100% - 180px);
+
+    }
+
+    .long_table_row {
+        width: 30%;
+
     }
 }
