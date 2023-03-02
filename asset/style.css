@@ -64,6 +64,25 @@ main {
     background-color: var(--db-dark);
 }
 
+.sidebar .home:hover {
+    background-color: rgba(255, 255, 255, 0.437);
+    cursor: pointer;
+}
+
+.sidebar .stats:hover {
+    background-color: rgba(255, 255, 255, 0.437);
+    cursor: pointer;
+}
+
+.sidebar .signals:hover {
+    background-color: rgba(255, 255, 255, 0.437);
+    cursor: pointer;
+}
+
+.fa-bell {
+    color: orange;
+}
+
 #offcanvasboolean {
     width: 100%;
 }
